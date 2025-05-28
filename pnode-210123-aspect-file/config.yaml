@@ -1,0 +1,9 @@
+mqtt:
+  broker_url: 'mqtt://aliconnect.nl'
+  port: 1883
+  topic: 'polymac/210123-53084127-A96C-4D2C-9835-90E684BE06EA/aspect/batchdata'
+  username: '' # Optional: Add username if required
+  password: '' # Optional: Add password if required
+
+csv:
+  file_path: './BatchData.csv' # Assuming BatchData.csv is in the same directory as index.js
