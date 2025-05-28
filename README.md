@@ -6,8 +6,8 @@
 
 - [Pagesgroup Polyamc PNode 210123 Github Repositorie](https://github.com/pagesgroup/pnode-210123)
 - [Pagesgroup Polyamc PNode 210123 Github Page](https://pagesgroup.github.io/pnode-210123/)
-- [PNode 210123 Application](https://pagesgroup.aliconnect.nl/pnode-210123/app/public/)
-- [PNode 210123 PLT Simulation for testing Aspect](https://pagesgroup.aliconnect.nl/pnode-210123/plt/public/)
+- [PNode 210123 Application](https://pagesgroup.github.io/pnode-210123/app/public/)
+- [PNode 210123 PLT Simulation for testing Aspect](https://pagesgroup.github.io/pnode-210123/plt/public/)
 
 
 ### Optie 1, MQTT
