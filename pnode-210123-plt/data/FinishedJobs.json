@@ -1,0 +1,666 @@
+[
+  {
+    "startTime": "2025-05-28_11:01:24",
+    "JobID": "SIM51539-C852M-HDWHIML-A118",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_11:03:54",
+    "JobID": "SIM62392-C575M-HDWHIML-A340",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_11:04:59",
+    "JobID": "SIM55146-C469M-HDWHIML-A226",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": null,
+    "JobID": "FirstJobSimID",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": "1",
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_11:05:54",
+    "JobID": "SIM853-C530M-HDWHIML-A910",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": null,
+    "JobID": "10",
+    "FinishedCartons": "16",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_12:03:42"
+  },
+  {
+    "startTime": null,
+    "JobID": "11",
+    "FinishedCartons": "31",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_12:04:37"
+  },
+  {
+    "startTime": "2025-05-28_11:07:04",
+    "JobID": "SIM41722-C572M-HDWHIML-A504",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": null,
+    "JobID": "13",
+    "FinishedCartons": "62",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:37:31"
+  },
+  {
+    "startTime": null,
+    "JobID": "14",
+    "FinishedCartons": "95",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:39:06"
+  },
+  {
+    "startTime": "2025-05-28_11:09:34",
+    "JobID": "SIM50002-C890M-HDWHIML-A807",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_11:10:49",
+    "JobID": "SIM56781-C784M-HDWHIML-A386",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_11:11:36",
+    "JobID": "SIM2690-C827M-HDWHIML-A796",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_11:12:51",
+    "JobID": "SIM59743-C323M-HDWHIML-A627",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": null,
+    "JobID": "12",
+    "FinishedCartons": "37",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_12:04:42"
+  },
+  {
+    "startTime": "2025-05-28_11:14:06",
+    "JobID": "SIM31274-C246M-HDWHIML-A718",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_11:15:16",
+    "JobID": "SIM6758-C493M-HDWHIML-A389",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": null,
+    "JobID": "15",
+    "FinishedCartons": "104",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:39:56"
+  },
+  {
+    "startTime": "2025-05-28_11:16:26",
+    "JobID": "SIM66452-C477M-HDWHIML-A940",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": null,
+    "JobID": "16",
+    "FinishedCartons": "118",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:40:01"
+  },
+  {
+    "startTime": "2025-05-28_11:17:31",
+    "JobID": "SIM46909-C220M-HDWHIML-A747",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": null,
+    "JobID": "17",
+    "FinishedCartons": "146",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:40:16"
+  },
+  {
+    "startTime": null,
+    "JobID": "18",
+    "FinishedCartons": "181",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:41:31"
+  },
+  {
+    "startTime": "2025-05-28_11:18:41",
+    "JobID": "SIM79626-C386M-HDWHIML-A247",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": null,
+    "JobID": "19",
+    "FinishedCartons": "195",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:41:41"
+  },
+  {
+    "startTime": null,
+    "JobID": "20",
+    "FinishedCartons": "201",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:42:31"
+  },
+  {
+    "startTime": "2025-05-28_11:19:51",
+    "JobID": "SIM59334-C738M-HDWHIML-A819",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": null,
+    "JobID": "21",
+    "FinishedCartons": "223",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:42:46"
+  },
+  {
+    "startTime": "2025-05-28_11:21:01",
+    "JobID": "SIM60149-C652M-HDWHIML-A791",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": null,
+    "JobID": "22",
+    "FinishedCartons": "236",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:43:41"
+  },
+  {
+    "startTime": "2025-05-28_11:22:12",
+    "JobID": "SIM26364-C922M-HDWHIML-A718",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": null,
+    "JobID": "23",
+    "FinishedCartons": "274",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:46:01"
+  },
+  {
+    "startTime": null,
+    "JobID": "24",
+    "FinishedCartons": "297",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:46:17"
+  },
+  {
+    "startTime": null,
+    "JobID": "25",
+    "FinishedCartons": "329",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:47:22"
+  },
+  {
+    "startTime": "2025-05-28_11:23:32",
+    "JobID": "SIM15049-C545M-HDWHIML-A872",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": null,
+    "JobID": "26",
+    "FinishedCartons": "344",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:47:27"
+  },
+  {
+    "startTime": "2025-05-28_11:24:32",
+    "JobID": "SIM48061-C757M-HDWHIML-A192",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": null,
+    "JobID": "27",
+    "FinishedCartons": "366",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:48:32"
+  },
+  {
+    "startTime": null,
+    "JobID": "28",
+    "FinishedCartons": "446",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:50:52"
+  },
+  {
+    "startTime": null,
+    "JobID": "29",
+    "FinishedCartons": "466",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:51:57"
+  },
+  {
+    "startTime": "2025-05-28_11:25:52",
+    "JobID": "SIM61283-C904M-HDWHIML-A434",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": null,
+    "JobID": "30",
+    "FinishedCartons": "491",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:26:02"
+  },
+  {
+    "startTime": null,
+    "JobID": "31",
+    "FinishedCartons": "487",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:27:12"
+  },
+  {
+    "startTime": "2025-05-28_11:27:07",
+    "JobID": "SIM75745-C813M-HDWHIML-A484",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": null,
+    "JobID": "32",
+    "FinishedCartons": "494",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:27:17"
+  },
+  {
+    "startTime": null,
+    "JobID": "33",
+    "FinishedCartons": "502",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:28:12"
+  },
+  {
+    "startTime": "2025-05-28_11:28:07",
+    "JobID": "SIM70633-C499M-HDWHIML-A611",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": null,
+    "JobID": "34",
+    "FinishedCartons": "539",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:29:22"
+  },
+  {
+    "startTime": "2025-05-28_11:29:17",
+    "JobID": "SIM18101-C669M-HDWHIML-A790",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": null,
+    "JobID": "35",
+    "FinishedCartons": "568",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:29:42"
+  },
+  {
+    "startTime": null,
+    "JobID": "36",
+    "FinishedCartons": "574",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:30:32"
+  },
+  {
+    "startTime": "2025-05-28_11:30:27",
+    "JobID": "SIM59237-C821M-HDWHIML-A919",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": null,
+    "JobID": "37",
+    "FinishedCartons": "588",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:30:37"
+  },
+  {
+    "startTime": null,
+    "JobID": "38",
+    "FinishedCartons": "601",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:31:47"
+  },
+  {
+    "startTime": "2025-05-28_11:31:42",
+    "JobID": "SIM81067-C716M-HDWHIML-A916",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": null,
+    "JobID": "39",
+    "FinishedCartons": "613",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:31:52"
+  },
+  {
+    "startTime": null,
+    "JobID": "40",
+    "FinishedCartons": "628",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:33:02"
+  },
+  {
+    "startTime": "2025-05-28_11:32:57",
+    "JobID": "SIM58019-C566M-HDWHIML-A225",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": null,
+    "JobID": "41",
+    "FinishedCartons": "637",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:33:07"
+  },
+  {
+    "startTime": null,
+    "JobID": "42",
+    "FinishedCartons": "691",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:34:27"
+  },
+  {
+    "startTime": "2025-05-28_11:34:17",
+    "JobID": "SIM33498-C731M-HDWHIML-A211",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": null,
+    "JobID": "43",
+    "FinishedCartons": "709",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_11:34:47"
+  },
+  {
+    "startTime": null,
+    "JobID": "44",
+    "FinishedCartons": "724",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_11:35:01",
+    "JobID": "SIM23536-C372M-HDWHIML-A269",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_11:36:16",
+    "JobID": "SIM12265-C377M-HDWHIML-A487",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_11:37:26",
+    "JobID": "SIM86221-C892M-HDWHIML-A380",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_11:38:36",
+    "JobID": "SIM54902-C132M-HDWHIML-A240",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_11:39:51",
+    "JobID": "SIM32864-C380M-HDWHIML-A210",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_11:41:16",
+    "JobID": "SIM93569-C421M-HDWHIML-A879",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_11:42:26",
+    "JobID": "SIM86646-C707M-HDWHIML-A685",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_11:43:36",
+    "JobID": "SIM53865-C763M-HDWHIML-A771",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_11:44:46",
+    "JobID": "SIM32743-C392M-HDWHIML-A493",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_11:45:56",
+    "JobID": "SIM13866-C703M-HDWHIML-A530",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_11:47:12",
+    "JobID": "SIM83925-C913M-HDWHIML-A504",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_11:48:22",
+    "JobID": "SIM47801-C405M-HDWHIML-A602",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_11:49:37",
+    "JobID": "SIM62843-C612M-HDWHIML-A962",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_11:50:47",
+    "JobID": "SIM89557-C278M-HDWHIML-A265",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_11:51:52",
+    "JobID": "SIM36760-C385M-HDWHIML-A399",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_11:52:57",
+    "JobID": "SIM28227-C903M-HDWHIML-A296",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_11:53:07",
+    "JobID": "SIM87883-C693M-HDWHIML-A903",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_11:54:17",
+    "JobID": "SIM82335-C966M-HDWHIML-A421",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_12:03:22",
+    "JobID": "SIM17900-C744M-HDWHIML-A860",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_12:04:32",
+    "JobID": "SIM1921-C720M-HDWHIML-A782",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  }
+]

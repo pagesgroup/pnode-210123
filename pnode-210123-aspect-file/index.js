@@ -1,74 +1,86 @@
-const options = {
-  port: 1883,
-  // protocol: 'mqtts', // Let op de 's' voor SSL/TLS
-  // username: 'jouwGebruikersnaam', // optioneel
-  // password: 'jouwWachtwoord',     // optioneel
-  // key: KEY,                       // optioneel
-  // cert: CERT,                     // optioneel
-  // ca: CA,                         // optioneel
-  // rejectUnauthorized: false  // Alleen voor testen — zet dit op true in productie met geldige certs
+const fs = require('fs');
+const path = require('path');
+const yaml = require('js-yaml');
+const mqtt = require('mqtt');
+const os = require('os');
+const { ensureInit } = require('./src/init/createFileStruct');
+const { readCsvJobInfo } = require('./src/data-proccesing/csvProcessor');
+const { saveJsonToCsvFile } = require('./src/utils/writeToCSV.js');
+
+// 📥 Configuratie laden
+const configPath = path.resolve(__dirname, '../config/config.yaml');
+const config = yaml.load(fs.readFileSync(configPath, 'utf8'));
+
+// 🔧 Resolving extra paths
+config.resolvedPaths = {
+  validJobs: path.join(config.paths.baseData, config.paths.datafiles.validJobs)
 };
 
-const mqtt = require('mqtt');
+// ✅ Init folders aanmaken
+if (ensureInit(config)) {
+  console.log('✅ Initialization performed successfully (folders/files checked/created).');
+} else {
+  console.log('✅ Initialization check complete. No new folders/files needed or an error occurred during init.');
+}
 
-// Verbind met een MQTT broker (bijv. een publieke broker of je eigen)
-const client  = mqtt.connect('mqtt://aliconnect.nl', options);
-const path = 'polymac/210123-53084127-A96C-4D2C-9835-90E684BE06EA/aspect/';
+// 🗂 Paden naar CSV-bestanden
+const csvPaths = {
+  jobchange: {
+    path: path.join(config.paths.baseFile, 'JobChange', 'JobChange.csv'),
+    headers: ['DateTime', 'JobID', 'JobRun', 'MaterialID', 'LBLNAME']
+  },
+  rejects: {
+    path: path.join(config.paths.baseFile, 'Rejects', 'Rejects.csv'),
+    headers: ['DateTime', 'JobID', 'RejectReasonCode', 'Quantity']
+  },
+  finishedcartons: {
+    path: path.join(config.paths.baseFile, 'FinishedCartons', 'FinishedCartons.csv'),
+    headers: ['DateTime', 'JobID', 'FinishedCartons', 'BoxQtyActual']
+  }
+};
 
-// Bij succesvolle verbinding
-client.on('connect', function () {
-  console.log('Verbonden met MQTT broker');
-  // Abonneer op een topic
-  client.subscribe(path+'#', function (err) {
-    if (!err) {
-      console.log('Geabonneerd op '+path);
-      // Publiceer een bericht naar het topic
+// 🌐 MQTT Setup
+const options = { port: 1883 };
+const client = mqtt.connect('mqtt://aliconnect.nl', options);
+const mqttpath = 'polymac/210123-53084127-A96C-4D2C-9835-90E684BE06EA/to-pnode/';
 
-      (function checkfile(){
-        const rows = [
-          {
-            a:1,
-            b:2,
-          },
-          {
-            a:1,
-            b:2,
-          },
-        ];
-        const data = {
-          rows,
-          log: new Date().toISOString(),
-        }
-        client.publish(path+'batchdata', JSON.stringify(data), function (err) {
-          if (!err) {
-            console.log('Bericht succesvol verzonden!');
-          } else {
-            console.error('Fout bij verzenden:', err);
-          }
-
-          // Sluit de verbinding na verzenden
-          // client.end();
-        });
-        setTimeout(e => checkfile(),3000);
-      })()
-      return;
-    }
-  });
-});
-
-// Bericht ontvangen van een subscribed topic
-client.on('message', function (topic, message) {
-  // message is een Buffer
-  console.log(`Ontvangen op ${topic}: ${message.toString()}`);
-  switch (topic) {
-    case '': {
-      
-    }
+client.on('connect', () => {
+  console.log('✅ Verbonden met MQTT broker');
+const topicRoot = 'polymac/210123-53084127-A96C-4D2C-9835-90E684BE06EA';
+client.subscribe(`${topicRoot}/to-aspect/#`, (err) => {
+  if (!err) {
+    console.log('📡 Geabonneerd op ' + topicRoot + '/to-aspect/#');
   }
 });
 
-// Foutafhandeling
-client.on('error', function (error) {
-  console.error('Verbindingsfout:', error);
+  const interval = config.vnode_Server?.csvPollingIntervalMs || 40000;
+  setInterval(() => {
+    console.log('🕒 Start CSV-verwerking en publicatie...');
+    readCsvJobInfo(config);
+    try {
+      const validJobs = JSON.parse(fs.readFileSync(config.resolvedPaths.validJobs, 'utf8'));
+      const message = {
+        rows: validJobs,
+        log: new Date().toISOString()
+      };
+      client.publish(mqttpath + 'batchdata', JSON.stringify(message), (err) => {
+        if (!err) {
+          console.log('✅ Bericht verzonden via MQTT.');
+        } else {
+          console.error('❌ Fout bij verzenden via MQTT:', err);
+        }
+      });
+    } catch (err) {
+      console.error('❌ Fout bij lezen van ValidJobs.json:', err);
+    }
+  }, interval);
 });
 
+client.on('message', (topic, message) => {
+  console.log(`📨 Ontvangen op ${topic}: ${message.toString()}`);
+  saveJsonToCsvFile(topic, message.toString(), csvPaths); // ✅ csvPaths meegeven
+});
+
+client.on('error', (error) => {
+  console.error('❌ Verbindingsfout met MQTT broker:', error);
+});

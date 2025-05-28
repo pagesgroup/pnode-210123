@@ -1,0 +1,229 @@
+vnode_Server:
+  ip: 0.0.0.0
+  port_PLT: 31865
+  port_BP: 31866
+  csvPollingIntervalMs: 40000 # Interval in milliseconds for polling CSV job info
+
+expressServer: # Added section for Express server specific configurations
+  serverPort: 3000 # Default port for the Express server
+
+PLT_Server:
+  #ip: 192.168.0.10
+  ip: 127.0.0.1
+  port: 31864
+
+BP_Server:
+  #ip: 192.168.0.12
+  ip: 127.0.0.1
+  port: 31868
+
+paths:
+  outputJsonFolder: 'C:/pnode-210123/pnode-210123-plt/data/out'  # Relatief pad of gebruik 'C:/pnode-210123/pnode-210123-plt/data/out'
+  baseFile: "C:/pnode-210123/pnode-210123-aspect-file/polymac"
+  baseData: "C:/pnode-210123/pnode-210123-aspect-file/data"
+  baseDataPLT: "C:/pnode-210123/pnode-210123-plt/data"
+  folders:
+    errorInfoError: "ErrorInfo/Error"
+    errorInfoProcessed: "ErrorInfo/Processed"
+    finishedCartons: "FinishedCartons"
+    jobChange: "JobChange"
+    rejects: "Rejects"
+    jobInfo: "JobInfo"
+    jobInfoError: "JobInfo/Error"
+    jobInfoProcessed: "JobInfo/Processed"
+    logging: "Logging"
+  datafiles:
+    validJobs: "ValidJobs.json"
+    finishedJobs: "FinishedJobs.json"
+
+# CSV file generation settings
+csvSettings:
+  delimiter: ";" # Delimiter to be used for CSV files (e.g., "," or ";")
+
+# Simulator settings for PLT_BP.js
+simulatorSettings:
+  csvPath: 'C:/pnode-210123/pnode-210123-aspect-file/polymac/JobInfo/BatchData.csv' # Path relative to project root, or absolute. Used by MES sim.
+  initialJobId: "FirstJobSimID"      # Initial JobID for the device simulation.
+  jobChangeIntervalMs: 70000          # Interval for simulating JobChange messages from PLT.
+  boxInfoRequestIntervalMs: 5000      # Interval for RequestBoxInfo from BP after a JobChange.
+  finishedCartonsIntervalMs: 5000     # Interval for FinishedCartons messages from BP during production cycles.
+  rejectsIntervalMs: 5000             # Interval for Rejects messages from PLT during production cycles.
+  mesCsvWriteIntervalMs: 15000        # Interval for MES simulation to write a new row to BatchData.csv.
+
+# Prefixes for messages sent to PLC or recived from PLC
+messagePrefixes:
+  recived:
+    length: 16
+    jobChange: 'JOBCHANGE'
+    finishedCartons: 'FINISHEDCART'
+    rejects: 'REJECTS'
+    boxinfo: 'REQUESTBOXINFO'
+  send: 
+    length: 8
+    jobChangeInfo: 'Job:'
+    boxInfo: 'Job:'
+
+#Created Json File
+finishedCartons:
+  startDateAndTime:
+    name: 'startTime'
+  JobID:
+    name: 'JobID'
+  finishedCartons:
+    name: 'FinishedCartons'
+  boxQtyActual:
+    name: 'BoxQtyActual'
+  rejectQty:
+    name: 'RejectQty'
+  endDateAndTime:
+    name: 'endTime'
+
+schemas:
+#Recived Revined CSV File
+  batchData:
+    filename: BatchData.csv
+    properties:
+      JobID:
+        usedby: PLC
+        length: 40
+      JobRun:
+        usedby: PLC
+        length: 4
+      DesiredYield:
+        usedby: PLC
+        length: 8
+      MaterialID:
+        usedby: PLC
+        length: 30
+      ScheduleIndex:
+        usedby: PLC
+        length: 4
+      LBLBARCODE:
+        usedby: PLC
+        length: 40
+      LBLNAME:
+        usedby: PLC
+        length: 120
+      IMLBARCODE:
+        usedby: PLC
+        length: 40
+      IMLBARCODELOC:
+        usedby: PLC
+        length: 4
+        options:
+          - value: false
+          - value: "B"
+          - value: "T"
+#Send Message
+  jobInfo:
+    sender: vnode
+    properties:
+      JobIDCurrent:
+        length: 40
+        name: JobID
+      DesiredYieldCurrent:
+        length: 8
+        name: DesiredYield
+      MaterialID:
+        length: 40
+        name: MaterialID
+      LBLNAME:
+        length: 120
+        name: LBLNAME
+      LBLBARCODECurrent:
+        length: 40
+        name: LBLBARCODE
+      IMLBARCODECurrent:
+        length: 40
+        name: IMLBARCODE
+      IMLBARCODELOCCurrent:
+        length: 4
+        name: IMLBARCODELOC
+      JobIDNext:
+        length: 40
+        name: JobID
+      LBLBARCODENext:
+        length: 40
+        name: LBLBARCODE
+      IMLBARCODENext:
+        length: 40
+        name: IMLBARCODE
+      IMLBARCODELOCNext:
+        length: 4
+        name: IMLBARCODELOC
+      DesiredYieldNext:
+        length: 8
+        name: DesiredYield
+      DateTime:
+        length: 16
+        name: DateTime
+
+#Recived Message 
+  rejects:
+    filename: 'Rejects.csv' # Standardized log filename for reject data
+    sender: plt
+    properties:
+      jobID:
+        length: 40
+        name: JobID
+      rejectReasonCode:
+        length: 40
+        name: RejectReasonCode
+      quantity:
+        length: 40
+        name: Quantity
+
+#Recived Message 
+  jobChange:
+    sender: plt
+    filename: 'JobChange.csv' # Standardized log filename for job change data
+    properties:
+      dataCount:
+        length: 8
+      jobID:
+        length: 40
+        name: JobID
+      jobRun:
+        length: 40
+        name: JobRun
+
+#Recived Message 
+  finishedCartons:
+    filename: 'FinishedCartons.csv' # Standardized log filename for finished cartons data
+    properties:
+      jobID:
+        length: 40
+        name: JobID
+      numberOfFinishedCartons:
+        length: 8
+        name: FinishedCartons
+      boxQtyActual:
+        length: 8
+        name: BoxQtyActual
+
+#Send Message
+  boxinfo:
+    sender: bp
+    properties:
+      jobID:
+        length: 40
+        name: JobID
+      MaterialID:
+        length: 40
+        name: MaterialID
+      LBLBARCODE:
+        length: 40
+        name: LBLBARCODE
+      LBLNAME:
+        length: 120
+        name: LBLNAME
+      DateTime:
+        length: 16
+        name: DateTime
+
+#General Recived Message prefix
+  genralRecivePrefix:
+    context: 
+      length: 16
+    dataCount: 
+      length: 8

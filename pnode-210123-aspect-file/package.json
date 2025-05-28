@@ -9,6 +9,9 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "mqtt": "^5.13.0"
+    "csv-parser": "^3.2.0",
+    "js-yaml": "^4.1.0",
+    "mqtt": "^5.13.0",
+    "yaml": "^2.8.0"
   }
 }
