@@ -1,0 +1,14 @@
+{
+  "name": "pnode-210123-aspect-file",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Polymac",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "mqtt": "^5.13.0"
+  }
+}
