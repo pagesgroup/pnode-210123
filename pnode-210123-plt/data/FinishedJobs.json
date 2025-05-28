@@ -28,7 +28,7 @@
     "JobID": "FirstJobSimID",
     "FinishedCartons": null,
     "BoxQtyActual": null,
-    "RejectQty": "1",
+    "RejectQty": "9",
     "endTime": null
   },
   {
@@ -42,18 +42,18 @@
   {
     "startTime": null,
     "JobID": "10",
-    "FinishedCartons": "16",
+    "FinishedCartons": "10",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_12:03:42"
+    "endTime": "2025-05-28_12:17:39"
   },
   {
     "startTime": null,
     "JobID": "11",
-    "FinishedCartons": "31",
+    "FinishedCartons": "16",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_12:04:37"
+    "endTime": "2025-05-28_13:26:08"
   },
   {
     "startTime": "2025-05-28_11:07:04",
@@ -66,18 +66,18 @@
   {
     "startTime": null,
     "JobID": "13",
-    "FinishedCartons": "62",
+    "FinishedCartons": "42",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:37:31"
+    "endTime": "2025-05-28_13:28:28"
   },
   {
     "startTime": null,
     "JobID": "14",
-    "FinishedCartons": "95",
+    "FinishedCartons": "54",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:39:06"
+    "endTime": "2025-05-28_13:28:33"
   },
   {
     "startTime": "2025-05-28_11:09:34",
@@ -114,10 +114,10 @@
   {
     "startTime": null,
     "JobID": "12",
-    "FinishedCartons": "37",
+    "FinishedCartons": "36",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_12:04:42"
+    "endTime": "2025-05-28_13:27:23"
   },
   {
     "startTime": "2025-05-28_11:14:06",
@@ -138,10 +138,10 @@
   {
     "startTime": null,
     "JobID": "15",
-    "FinishedCartons": "104",
+    "FinishedCartons": "69",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:39:56"
+    "endTime": "2025-05-28_13:28:43"
   },
   {
     "startTime": "2025-05-28_11:16:26",
@@ -154,10 +154,10 @@
   {
     "startTime": null,
     "JobID": "16",
-    "FinishedCartons": "118",
+    "FinishedCartons": "83",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:40:01"
+    "endTime": "2025-05-28_13:29:43"
   },
   {
     "startTime": "2025-05-28_11:17:31",
@@ -170,18 +170,18 @@
   {
     "startTime": null,
     "JobID": "17",
-    "FinishedCartons": "146",
+    "FinishedCartons": "106",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:40:16"
+    "endTime": "2025-05-28_13:29:58"
   },
   {
     "startTime": null,
     "JobID": "18",
-    "FinishedCartons": "181",
+    "FinishedCartons": "112",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:41:31"
+    "endTime": "2025-05-28_13:30:58"
   },
   {
     "startTime": "2025-05-28_11:18:41",
@@ -194,18 +194,18 @@
   {
     "startTime": null,
     "JobID": "19",
-    "FinishedCartons": "195",
+    "FinishedCartons": "152",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:41:41"
+    "endTime": "2025-05-28_13:33:28"
   },
   {
     "startTime": null,
     "JobID": "20",
-    "FinishedCartons": "201",
+    "FinishedCartons": "165",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:42:31"
+    "endTime": "2025-05-28_13:34:28"
   },
   {
     "startTime": "2025-05-28_11:19:51",
@@ -218,10 +218,10 @@
   {
     "startTime": null,
     "JobID": "21",
-    "FinishedCartons": "223",
+    "FinishedCartons": "170",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:42:46"
+    "endTime": "2025-05-28_13:35:33"
   },
   {
     "startTime": "2025-05-28_11:21:01",
@@ -234,10 +234,10 @@
   {
     "startTime": null,
     "JobID": "22",
-    "FinishedCartons": "236",
+    "FinishedCartons": "179",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:43:41"
+    "endTime": "2025-05-28_13:35:43"
   },
   {
     "startTime": "2025-05-28_11:22:12",
@@ -250,26 +250,26 @@
   {
     "startTime": null,
     "JobID": "23",
-    "FinishedCartons": "274",
+    "FinishedCartons": "188",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:46:01"
+    "endTime": "2025-05-28_12:30:45"
   },
   {
     "startTime": null,
     "JobID": "24",
-    "FinishedCartons": "297",
+    "FinishedCartons": "329",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:46:17"
+    "endTime": "2025-05-28_12:31:55"
   },
   {
     "startTime": null,
     "JobID": "25",
-    "FinishedCartons": "329",
+    "FinishedCartons": "343",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:47:22"
+    "endTime": "2025-05-28_12:32:00"
   },
   {
     "startTime": "2025-05-28_11:23:32",
@@ -282,10 +282,10 @@
   {
     "startTime": null,
     "JobID": "26",
-    "FinishedCartons": "344",
+    "FinishedCartons": "372",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:47:27"
+    "endTime": "2025-05-28_12:33:10"
   },
   {
     "startTime": "2025-05-28_11:24:32",
@@ -298,26 +298,26 @@
   {
     "startTime": null,
     "JobID": "27",
-    "FinishedCartons": "366",
+    "FinishedCartons": "402",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:48:32"
+    "endTime": "2025-05-28_12:34:30"
   },
   {
     "startTime": null,
     "JobID": "28",
-    "FinishedCartons": "446",
+    "FinishedCartons": "414",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:50:52"
+    "endTime": "2025-05-28_12:34:40"
   },
   {
     "startTime": null,
     "JobID": "29",
-    "FinishedCartons": "466",
+    "FinishedCartons": "423",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:51:57"
+    "endTime": "2025-05-28_12:35:35"
   },
   {
     "startTime": "2025-05-28_11:25:52",
@@ -330,18 +330,18 @@
   {
     "startTime": null,
     "JobID": "30",
-    "FinishedCartons": "491",
+    "FinishedCartons": "435",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:26:02"
+    "endTime": "2025-05-28_12:35:40"
   },
   {
     "startTime": null,
     "JobID": "31",
-    "FinishedCartons": "487",
+    "FinishedCartons": "458",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:27:12"
+    "endTime": "2025-05-28_12:35:55"
   },
   {
     "startTime": "2025-05-28_11:27:07",
@@ -354,18 +354,18 @@
   {
     "startTime": null,
     "JobID": "32",
-    "FinishedCartons": "494",
+    "FinishedCartons": "471",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:27:17"
+    "endTime": "2025-05-28_12:36:55"
   },
   {
     "startTime": null,
     "JobID": "33",
-    "FinishedCartons": "502",
+    "FinishedCartons": "490",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:28:12"
+    "endTime": "2025-05-28_12:37:10"
   },
   {
     "startTime": "2025-05-28_11:28:07",
@@ -378,10 +378,10 @@
   {
     "startTime": null,
     "JobID": "34",
-    "FinishedCartons": "539",
+    "FinishedCartons": "510",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:29:22"
+    "endTime": "2025-05-28_12:38:10"
   },
   {
     "startTime": "2025-05-28_11:29:17",
@@ -394,18 +394,18 @@
   {
     "startTime": null,
     "JobID": "35",
-    "FinishedCartons": "568",
+    "FinishedCartons": "518",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:29:42"
+    "endTime": "2025-05-28_12:38:20"
   },
   {
     "startTime": null,
     "JobID": "36",
-    "FinishedCartons": "574",
+    "FinishedCartons": "555",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:30:32"
+    "endTime": "2025-05-28_12:39:40"
   },
   {
     "startTime": "2025-05-28_11:30:27",
@@ -418,18 +418,18 @@
   {
     "startTime": null,
     "JobID": "37",
-    "FinishedCartons": "588",
+    "FinishedCartons": "598",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:30:37"
+    "endTime": "2025-05-28_12:41:55"
   },
   {
     "startTime": null,
     "JobID": "38",
-    "FinishedCartons": "601",
+    "FinishedCartons": "603",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:31:47"
+    "endTime": "2025-05-28_12:42:05"
   },
   {
     "startTime": "2025-05-28_11:31:42",
@@ -442,18 +442,18 @@
   {
     "startTime": null,
     "JobID": "39",
-    "FinishedCartons": "613",
+    "FinishedCartons": "645",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:31:52"
+    "endTime": "2025-05-28_12:43:20"
   },
   {
     "startTime": null,
     "JobID": "40",
-    "FinishedCartons": "628",
+    "FinishedCartons": "720",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:33:02"
+    "endTime": "2025-05-28_12:46:01"
   },
   {
     "startTime": "2025-05-28_11:32:57",
@@ -466,18 +466,18 @@
   {
     "startTime": null,
     "JobID": "41",
-    "FinishedCartons": "637",
+    "FinishedCartons": "735",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:33:07"
+    "endTime": "2025-05-28_12:46:51"
   },
   {
     "startTime": null,
     "JobID": "42",
-    "FinishedCartons": "691",
+    "FinishedCartons": "760",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:34:27"
+    "endTime": "2025-05-28_12:47:06"
   },
   {
     "startTime": "2025-05-28_11:34:17",
@@ -490,18 +490,18 @@
   {
     "startTime": null,
     "JobID": "43",
-    "FinishedCartons": "709",
+    "FinishedCartons": "781",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": "2025-05-28_11:34:47"
+    "endTime": "2025-05-28_12:47:56"
   },
   {
     "startTime": null,
     "JobID": "44",
-    "FinishedCartons": "724",
+    "FinishedCartons": "794",
     "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
-    "endTime": null
+    "endTime": "2025-05-28_12:48:06"
   },
   {
     "startTime": "2025-05-28_11:35:01",
@@ -660,6 +660,166 @@
     "JobID": "SIM1921-C720M-HDWHIML-A782",
     "FinishedCartons": null,
     "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_12:17:29",
+    "JobID": "SIM86770-C580M-HDWHIML-A254",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_12:18:44",
+    "JobID": "SIM45768-C147M-HDWHIML-A262",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_12:19:50",
+    "JobID": "SIM67773-C712M-HDWHIML-A392",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_12:21:05",
+    "JobID": "SIM71110-C305M-HDWHIML-A398",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_12:22:20",
+    "JobID": "SIM38848-C873M-HDWHIML-A900",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_12:23:35",
+    "JobID": "SIM33726-C562M-HDWHIML-A957",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_12:24:45",
+    "JobID": "667318-C310M-HDWHIML-A598",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_12:25:45",
+    "JobID": "638064-C310M-HDWHIML-A349",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_12:27:00",
+    "JobID": "627045-C310M-HDWHIML-A393",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_12:28:10",
+    "JobID": "68452-C310M-HDWHIML-A184",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_12:29:30",
+    "JobID": "636977-C310M-HDWHIML-A39",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_12:30:40",
+    "JobID": "628111-C310M-HDWHIML-A28",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_12:31:50",
+    "JobID": "63075-C310M-HDWHIML-A21",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_12:33:05",
+    "JobID": "662566-C310M-HDWHIML-A125",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_12:34:20",
+    "JobID": "684132-C310M-HDWHIML-A11",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": "2025-05-28_12:35:30",
+    "JobID": "639125-C310M-HDWHIML-A76",
+    "FinishedCartons": null,
+    "BoxQtyActual": null,
+    "RejectQty": null,
+    "endTime": null
+  },
+  {
+    "startTime": null,
+    "JobID": "45",
+    "FinishedCartons": "828",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_12:49:16"
+  },
+  {
+    "startTime": null,
+    "JobID": "46",
+    "FinishedCartons": "837",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_12:50:16"
+  },
+  {
+    "startTime": null,
+    "JobID": "47",
+    "FinishedCartons": "842",
+    "BoxQtyActual": "FirstJobSimID",
+    "RejectQty": null,
+    "endTime": "2025-05-28_12:50:21"
+  },
+  {
+    "startTime": null,
+    "JobID": "48",
+    "FinishedCartons": "862",
+    "BoxQtyActual": "FirstJobSimID",
     "RejectQty": null,
     "endTime": null
   }

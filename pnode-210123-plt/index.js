@@ -29,7 +29,7 @@ const options = {
 };
 
 
-const mqttPathBase = 'polymac/210123-53084127-A96C-4D2C-9835-90E684BE06EA/to-aspect/';
+const mqttPathBase = 'polymac/210123-53084127-A96C-4D2C-9835-90E684BE06EA/aspect/read/';
 const client = mqtt.connect('mqtt://aliconnect.nl', options);
 
 // 🔁 JSON-bestanden koppelen aan MQTT-topics
@@ -71,6 +71,11 @@ client.on('connect', () => {
       }
     });
   }, interval);
+});
+
+client.on('message', (topic, message) => {
+  console.log(`📨 Ontvangen op ${topic}: ${message.toString()}`);
+  writeToJSON(topic, message.toString());
 });
 
 client.on('error', (error) => {
