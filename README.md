@@ -1,16 +1,14 @@
-# PNODE-210123
+# Aspect interface
 
-## Aspect interface
+## Test demo
 
-### Test demo
-
-- [Pagesgroup Polyamc PNode 210123 Github Repositorie](https://github.com/pagesgroup/pnode-210123)
-- [Pagesgroup Polyamc PNode 210123 Github Page](https://pagesgroup.github.io/pnode-210123/)
+- [Pagesgroup Polymac PNode 210123 Github Repositorie](https://github.com/pagesgroup/pnode-210123)
+- [Pagesgroup Polymac PNode 210123 Github Page](https://pagesgroup.github.io/pnode-210123/)
 - [PNode 210123 Application](https://pagesgroup.github.io/pnode-210123/app/public/)
 - [PNode 210123 PLT Simulation for testing Aspect](https://pagesgroup.github.io/pnode-210123/plt/public/)
 
 
-### Optie 1, MQTT
+## Option 1, MQTT
 
 - mqttserver: `mqtt://aliconnect.nl:1884`
 - path: `polymac/210123-53084127-A96C-4D2C-9835-90E684BE06EA`
@@ -18,7 +16,7 @@
 1. Aspect Write
     1. Batch Data
         - destinationName: `/aspect/write/batchdata`
-        - payloadString: prevert: JSON representation of CSV file data | optional: CSV data
+        - payloadString: prevert - JSON representation of CSV file data | optional -CSV data
             1. `JobId`: Job control	Communication between Aspect and PC	(max length: 40)
             1. `JobRun`: Job control	Communication between Aspect and PC	(max length: 3)
             1. `DesiredYield`: Amount of products to be produced	Used for batch control in PLT (max length: 8)
@@ -65,22 +63,10 @@
                 1. `RejectReasonCode`: 1
                 1. `Quantity`: 36
 
-#### Optie 2, CSV file format
+## Option 2, CSV file format
 
 - Comma seperated
 - Periodiek wegschrijven naar `{folder}`
-
-c:\Polymac\
-c:\Polymac\ErrorInfo
-c:\Polymac\ErrorInfo\Error
-c:\Polymac\ErrorInfo\Processed
-c:\Polymac\FinishedCartons
-c:\Polymac\Rejects
-c:\Polymac\JobChange
-c:\Polymac\JobInfo
-c:\Polymac\JobInfo\Error
-c:\Polymac\JobInfo\Processed
-c:\Polymac\Logging
 
 Columns
 1. JobID
