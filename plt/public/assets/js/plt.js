@@ -20,15 +20,15 @@ mqttClient.onMessageArrived = function(message) {
   // console.debug(selector, '=', payloadString);
   console.debug(selector);
   switch (selector) {
-    case '/aspect/jobchange': {
+    // case '/aspect/jobchange': {
+    //   const data = JSON.parse(payloadString);
+    //   console.debug({data});
+    //   $('#jobchange').text(data.JobID,data.DataCount);
+    //   return;
+    // }
+    case '/aspect/write/batchdata': {
       const data = JSON.parse(payloadString);
-      console.debug({data});
-      $('#jobchange').text(data.JobID,data.DataCount);
-      return;
-    }
-    case '/aspect/batchdata': {
-      const data = JSON.parse(payloadString);
-      console.debug({data});
+      // console.debug({data});
       rows = data.rows;
       // console.debug({rows});
       $('table>tbody').clear().append(
@@ -54,21 +54,7 @@ var options = {
   timeout: 3,
   onSuccess(e) {
     console.log("mqtt connected",this);
-    mqttClient.subscribe(`${path}/#`, { qos: 1 });
-    (function jobDone(){
-      const row = rows.shift();
-      if (row) {
-        setValue('/aspect/jobchange', {
-          DataCount: 13,
-          JobID: row.JobID,
-        });
-        setValue('/aspect/batchdata', {
-          rows,
-          source: 'Job Change',
-        })
-      }
-      setTimeout(jobDone, 5000);
-    })()
+    mqttClient.subscribe(`${path}/aspect/write/#`, { qos: 1 });
   },
   onFailure(message) {
     console.log("Connection failed: " + message.errorMessage);
@@ -80,9 +66,51 @@ pnode = {
   plt: {
     init() {
       $(document.body).append(
-        // $('nav').append(
-        //   $('button').text('Test'),
-        // ),
+        $('nav').append(
+          $('button').text('Job change').on('click', e => {
+            const row = rows[1];
+            if (row) {
+              setValue('/aspect/read/jobchange', {
+                DateTime: new Date().toISOString(),
+                JobID: row.JobID,
+                JobRun: row.JobRun,
+                MaterialID: row.MaterialID,
+                LBLNAME: row.LBLNAME,
+              });
+              
+              // setValue('/aspect/jobchange', {
+              //   DataCount: 13,
+              //   JobID: row.JobID,
+              // });
+              // setValue('/aspect/batchdata', {
+              //   rows,
+              //   source: 'Job Change',
+              // })
+            }
+          }),
+          $('button').text('Rejects').on('click', e => {
+            const data = [
+              {
+                DateTime: new Date().toISOString(),
+                JobID: rows[0].JobID,
+                RejectReasonCode: 1,
+                Quantity: 36,
+              }
+            ];
+            console.log({data})
+            setValue('/aspect/read/rejects', data);
+          }),
+          $('button').text('Finished Cartons').on('click', e => {
+            const row = {
+              DateTime: new Date().toISOString(),
+              JobID: rows[0].JobID,
+              BoxQtyActual: 1,
+              FinishedCartons: 300,
+            };
+            console.log({row})
+            setValue('/aspect/read/finishedcartons', row);
+          }),
+        ),
         $('main').append(
           $('div').id('jobchange'),
           $('table').class('grid').style('white-space:nowrap;').append(

@@ -27,15 +27,21 @@ mqttClient.onMessageArrived = function(message) {
   // console.debug(selector, '=', payloadString);
   console.debug(selector);
   switch (selector) {
-    case '/aspect/jobchange': {
-      const data = JSON.parse(payloadString);
-      console.debug({data});
-      $('#jobchange').text(data.JobID,data.DataCount)
+    case '/aspect/read/jobchange': {
+      $('#jobchange').text(selector,payloadString);
       return;
     }
-    case '/aspect/batchdata': {
+    case '/aspect/read/rejects': {
+      $('#jobchange').text(selector,payloadString);
+      return;
+    }
+    case '/aspect/read/finishedcartons': {
+      $('#jobchange').text(selector,payloadString);
+      return;
+    }
+    case '/aspect/write/batchdata': {
       const {rows} = JSON.parse(payloadString);
-      // console.debug({rows});
+      console.debug({rows});
       $('table>tbody').clear().append(
         rows.map(row => $('tr').append(
           $('td').text(row.JobID),
@@ -58,7 +64,7 @@ var options = {
   timeout: 3,
   onSuccess(e) {
     console.log("mqtt connected",this);
-    mqttClient.subscribe(`${path}/#`, { qos: 1 });
+    mqttClient.subscribe(`${path}/aspect/#`, { qos: 1 });
   },
   onFailure(message) {
     console.log("Connection failed: " + message.errorMessage);
@@ -78,7 +84,7 @@ pnode = {
         reader.onload = function(event) {
           const {result} = event.target;
           const rows = csvToJson(result);
-          setValue('/aspect/batchdata', {
+          setValue('/aspect/write/batchdata', {
             rows,
             source: file.name,
           })
@@ -117,7 +123,7 @@ pnode = {
             result[schemaName] = rows;
           })
           // console.log({result});
-          setValue('/aspect/batchdata', {
+          setValue('/aspect/write/batchdata', {
             rows: result.Data,
             source: file.name,
           })
