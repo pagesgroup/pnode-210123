@@ -16,7 +16,7 @@
 1. Aspect Write
     1. Batch Data
         - destinationName: `/aspect/write/batchdata`
-        - payloadString: prevert - JSON representation of CSV file data | optional -CSV data
+        - payloadString: prevert - JSON representation of CSV file data or optional -CSV data
             1. `JobId`: Job control	Communication between Aspect and PC	(max length: 40)
             1. `JobRun`: Job control	Communication between Aspect and PC	(max length: 3)
             1. `DesiredYield`: Amount of products to be produced	Used for batch control in PLT (max length: 8)
