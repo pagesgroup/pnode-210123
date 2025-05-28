@@ -42,14 +42,14 @@ const csvPaths = {
 // 🌐 MQTT Setup
 const options = { port: 1883 };
 const client = mqtt.connect('mqtt://aliconnect.nl', options);
-const mqttpath = 'polymac/210123-53084127-A96C-4D2C-9835-90E684BE06EA/to-pnode/';
+const mqttpath = 'polymac/210123-53084127-A96C-4D2C-9835-90E684BE06EA/aspect/write/';
 
 client.on('connect', () => {
   console.log('✅ Verbonden met MQTT broker');
 const topicRoot = 'polymac/210123-53084127-A96C-4D2C-9835-90E684BE06EA';
-client.subscribe(`${topicRoot}/to-aspect/#`, (err) => {
+client.subscribe(`${topicRoot}/aspect/read/#`, (err) => {
   if (!err) {
-    console.log('📡 Geabonneerd op ' + topicRoot + '/to-aspect/#');
+    console.log('📡 Geabonneerd op ' + topicRoot + '/aspect/read/#');
   }
 });
 
