@@ -17,5 +17,14 @@
   },
   "homepage": "https://github.com/pagesgroup/pnode-210123#readme",
   "dependencies": {
+    "aedes": "^0.51.3",
+    "csv-parser": "^3.2.0",
+    "csv-writer": "^1.6.0",
+    "express": "^5.1.0",
+    "js-yaml": "^4.1.0",
+    "mqtt": "^5.13.0",
+    "mssql": "^11.0.1",
+    "net": "^1.0.2",
+    "node-opcua": "^2.153.0"
   }
 }
