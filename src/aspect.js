@@ -30,8 +30,16 @@ const aspect = {
     });
     csvWriter.writeRecords(rows).then(() => console.log('CSV opgeslagen als output.csv'));
   },
+  /**
+   * description : verifieer data aan properties specificatie
+   * Input:
+   * Result:
+   */
+  controleBatchDataCsv() {
+
+  },
   readCsvJobInfo() {
-    const filename = './data/BatchData.csv';
+    const filename = './data/JobInfo/BatchData.csv';
     if (fs.existsSync(filename)) {
       const results = [];
       fs.createReadStream(filename)

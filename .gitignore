@@ -10,3 +10,5 @@ polymac/JobChange/
 polymac/Rejects/
 polymac/FinishedCartons/
 *.csv
+config/config.yaml
+data

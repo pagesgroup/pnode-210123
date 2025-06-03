@@ -16,6 +16,26 @@ aim = {
     const content = fs.readFileSync(path, 'utf8');
     return JSON.parse(content);
   },
+  /**
+   * 
+   */
+  tcpClient(options,message) {
+    const {port,host} = options;
+    const client = new net.Socket();
+    client.connect(port, host, () => {
+      console.log('Connected to server');
+      client.write(message, 'ascii', () => {
+        console.log(`verzonden`);
+      });
+    });
+    client.on('data', (data) => {
+      console.log('Received from server:', data.toString());
+      client.end(); // Sluit de verbinding na ontvangst
+    });
+    client.on('close', () => {
+      console.log('Connection closed');
+    });  
+  },
   tcpServer(options,events) {
     const {host,port} = options;
     const server = net.createServer((socket) => {

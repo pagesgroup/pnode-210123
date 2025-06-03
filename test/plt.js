@@ -11,7 +11,7 @@
 **/
 console.log('SIM PLT / IML PLEA');
 const net = require('net');
-const aim = require('./aim');
+const aim = require('../src/aim');
 const config = aim.loadConfig();
 const {schemas} = config; 
 const plt = aim.tcpServer(config.plt,{
