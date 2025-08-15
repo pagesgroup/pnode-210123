@@ -20,6 +20,7 @@
     "aedes": "^0.51.3",
     "csv-parser": "^3.2.0",
     "csv-writer": "^1.6.0",
+    "ethernet-ip": "^1.2.5",
     "express": "^5.1.0",
     "js-yaml": "^4.1.0",
     "mqtt": "^5.13.0",
